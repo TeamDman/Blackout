@@ -1,4 +1,2 @@
-dotnet publish `
---configuration Release `
--p:PublishSingleFile=true `
---self-contained=true
+Remove-Item out -Recurse;
+dotnet publish --configuration Release --output ./out
