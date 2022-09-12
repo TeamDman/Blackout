@@ -2,6 +2,8 @@
 
 A simple utility program to black out monitors.
 
+[![video demonstration](https://img.youtube.com/vi/qmOXfzEOW6Y/0.jpg)](https://www.youtube.com/watch?v=qmOXfzEOW6Y)
+
 ## Usage
 
 - Right click => spawn new instance
