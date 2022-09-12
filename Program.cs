@@ -33,7 +33,9 @@ static class Program {
                 Application.Exit();
             }
             if (e.Button == MouseButtons.Right) {
-                Process.Start(Process.GetCurrentProcess().MainModule.FileName);
+                var me = Process.GetCurrentProcess()?.MainModule?.FileName;
+                if (me == null) return;
+                Process.Start(me);
             }
             if (e.Button != MouseButtons.Left) return;
             var isFull = f.FormBorderStyle == FormBorderStyle.None;
